@@ -12,10 +12,10 @@ class Transfer
     sender.valid? and receiver.valid?
   end
 
-  def execute_transaction 
+  def execute_transaction
     if sender.balance > transfer_amount
       receiver.deposit(transfer_amount)
-    else 
+    else
       "Transaction rejected. Please check your account balance."
 
 end
