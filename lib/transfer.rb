@@ -8,4 +8,8 @@ class Transfer
     @transfer_amount = transfer_amount
   end
 
+  def valid? 
+    sender.valid? and receiver.valid? 
+  end 
+
 end
