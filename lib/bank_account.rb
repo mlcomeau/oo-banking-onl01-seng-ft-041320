@@ -4,6 +4,19 @@ class BankAccount
   def initialize (name)
     @name = name
     @balance = 1000
-    @status = open
+    @status = "open"
+  end 
+
+  def deposit (num)
+    balance += num 
+  end 
+
+  def display_balance 
+    balance 
+  end 
+
+  def valid?
+    (self.status == "open") && (self.balance > 0) 
+  end 
 
 end
