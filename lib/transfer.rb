@@ -17,5 +17,8 @@ class Transfer
       receiver.deposit(transfer_amount)
     else
       "Transaction rejected. Please check your account balance."
+    end
+  end
+
 
 end
