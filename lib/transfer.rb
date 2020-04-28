@@ -13,7 +13,7 @@ class Transfer
   end
 
   def execute_transaction
-    if sender.balance > amount
+    if (sender.balance > amount) && valid? 
       receiver.deposit(amount)
     else
       "Transaction rejected. Please check your account balance."
